@@ -2,21 +2,25 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Discovery-Server" />
+        <module name="Api-Gateway" />
         <module name="Products-Service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Api-Gateway" target="17" />
       <module name="Discovery-Server" target="17" />
       <module name="Products-Service" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Api-Gateway" options="-parameters" />
       <module name="Discovery-Server" options="-parameters" />
       <module name="Products-Service" options="-parameters" />
     </option>

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Api-Gateway/Api-Gateway.iml" filepath="$PROJECT_DIR$/Api-Gateway/Api-Gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/Discovery-Server/Discovery-Server.iml" filepath="$PROJECT_DIR$/Discovery-Server/Discovery-Server.iml" />
       <module fileurl="file://$PROJECT_DIR$/Products-Service/Products-Service.iml" filepath="$PROJECT_DIR$/Products-Service/Products-Service.iml" />
     </modules>
