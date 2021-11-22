@@ -2,6 +2,7 @@ package com.mrdiipo.productsservice.rest;
 
 import com.mrdiipo.productsservice.commands.CreateProductCommand;
 import com.mrdiipo.productsservice.rest.restModels.CreateProductRestModel;
+import lombok.Setter;
 import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
@@ -12,20 +13,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.UUID;
 
+@Setter
 @RestController
 @RequestMapping(path = "/api/v1/products") // http://localhost:8080/api/v1/products
 public class PostProductsController {
 
-    private final Environment environment;
-    private final CommandGateway commandGateway;
-
-    @Autowired
-    public PostProductsController(Environment environment,
-                                  CommandGateway commandGateway) {
-        this.environment = environment;
-        this.commandGateway = commandGateway;
-    }
-
+    private  Environment environment;
+    private  CommandGateway commandGateway;
 
     @PostMapping
     public String createProduct(@RequestBody CreateProductRestModel createProductRestModel){
