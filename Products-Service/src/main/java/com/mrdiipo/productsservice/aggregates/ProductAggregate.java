@@ -1,8 +1,7 @@
 package com.mrdiipo.productsservice.aggregates;
 
 import com.mrdiipo.productsservice.commands.CreateProductCommand;
-import com.mrdiipo.productsservice.coreEvents.ProductCreatedEvent;
-import lombok.AllArgsConstructor;
+import com.mrdiipo.productsservice.core.events.ProductCreatedEvent;
 import lombok.NoArgsConstructor;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;
@@ -19,6 +18,7 @@ public class ProductAggregate {
 
     @AggregateIdentifier
     private String productId;
+
     private String title;
     private BigDecimal price;
     private Integer quantity;

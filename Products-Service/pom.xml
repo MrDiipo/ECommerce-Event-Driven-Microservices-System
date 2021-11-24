@@ -57,6 +57,34 @@
 <!--            <artifactId>jaxb-api</artifactId>-->
 <!--        </dependency>-->
 
+        <!-- https://mvnrepository.com/artifact/org.axonframework/axon-spring-boot-autoconfigure -->
+<!--        <dependency>-->
+<!--            <groupId>org.axonframework</groupId>-->
+<!--            <artifactId>axon-spring-boot-autoconfigure</artifactId>-->
+<!--            <version>4.5.4</version>-->
+<!--        </dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/org.axonframework.extensions.springcloud/axon-springcloud-spring-boot-starter -->
+        <dependency>
+            <groupId>org.axonframework.extensions.springcloud</groupId>
+            <artifactId>axon-springcloud-spring-boot-starter</artifactId>
+            <version>4.4</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.axonframework.extensions.springcloud/axon-springcloud-spring-boot-autoconfigure -->
+        <dependency>
+            <groupId>org.axonframework.extensions.springcloud</groupId>
+            <artifactId>axon-springcloud-spring-boot-autoconfigure</artifactId>
+            <version>4.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.axonframework</groupId>
+            <artifactId>axon-distributed-commandbus-springcloud</artifactId>
+            <version>3.2</version>
+        </dependency>
+
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

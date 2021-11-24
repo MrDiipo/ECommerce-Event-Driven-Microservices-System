@@ -1,4 +1,4 @@
-package com.mrdiipo.productsservice.coreEvents;
+package com.mrdiipo.productsservice.core.events;
 
 import lombok.Builder;
 import lombok.Data;
