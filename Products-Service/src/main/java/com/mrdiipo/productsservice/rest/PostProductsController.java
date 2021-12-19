@@ -19,9 +19,11 @@ import java.util.UUID;
 @RequestMapping(path = "/api/v1/products") // http://localhost:8080/api/v1/products
 public class PostProductsController {
 
+    private final   CommandGateway commandGateway;
 
-    private  CommandGateway commandGateway;
-
+    public PostProductsController(CommandGateway commandGateway) {
+        this.commandGateway = commandGateway;
+    }
 
     @PostMapping
     public String createProduct(@RequestBody CreateProductRestModel createProductRestModel){
